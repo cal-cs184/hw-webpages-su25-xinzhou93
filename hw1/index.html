@@ -23,6 +23,18 @@
 			body {
 				font-family: 'Inter', sans-serif;
 			}
+			code, pre {
+				font-family: Consolas, Menlo, Monaco, monospace;
+				background-color: #f5f5f5;
+				padding: 10px;
+				display: block;
+				white-space: pre;
+				overflow-x: auto;
+				border-radius: 4px;
+    }
+			pre {
+				margin: 1em 0;
+    		}
 		</style>
 	</head>
 	<body>
@@ -58,7 +70,8 @@
 		<code>fill_pixel()</code> will be called.
 		</p>
 
-		<pre><code>
+		<pre>
+		<code>
 		//pseudocode
 		for (x {0}; x < width; ++x)
 			for (y {0}; y < height; ++y) {
