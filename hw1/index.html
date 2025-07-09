@@ -28,7 +28,7 @@
 	<body>
 		<div class="container">
 		<h1>CS184 Summer 2025 Homework 1 Write-Up</h1>
-		<div style="text-align: center;">Names: Xin Zhou</div>
+		<div style="text-align: center;">Name: Xin Zhou</div>
 
 		<br>
 
@@ -51,7 +51,10 @@
 		Give a high-level overview of what you implemented in this homework. Think about what you've built as a whole. Share your thoughts on what interesting things you've learned from completing the homework.
 
 		<h2>Task 1: Drawing Single-Color Triangles</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		In order to draw a continuous colored triangle to the screen space with discrete pixels, 
+		we need to sample if each pixel center is inside this
+		triangle. In <code>rasterize\_triangle()</code>, the basic idea is to use nested <code>for</code> loop to walk through 
+		each pixel, then if the center of a pixel is <code>inside\_triangle(x+0.5, y+0.5)</code>, <code>fill\_pixel()</code> will be called.
 
 		<p>Here is an example 2x2 gridlike structure using an HTML table. Each <b>tr</b> is a row and each <b>td</b> is a column in that row. You might find this useful for framing and showing your result images in an organized fashion.</p>
 		<div style="display: flex; flex-direction: column; align-items: center;">
