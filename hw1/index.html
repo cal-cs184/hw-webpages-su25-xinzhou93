@@ -78,15 +78,20 @@
 		</p>
 
 		<pre>
-		<code>
 		//pseudocode
 		for (x {0}; x < width; ++x)
-		 for (y {0}; y < height; ++y) {
-		  if (inside_triangle(tri, x+0.5, y+0.5)) {
-		  fill_pixel();}}
-		</code>
+			for (y {0}; y < height; ++y) {
+				if (inside_triangle(tri, x+0.5, y+0.5)) {
+					fill_pixel();}}
 		</pre>
 		
+		<p>
+			The customized <code>inside_triangle()</code> has a helper function 
+			<code>line_test()</code> to calculate \(v \cdot N\), which is the dot product of a 
+			vector \(v\) (from each vertex to the center of a pixel) and a normal vector \(N\) (the normal vector 
+			of the oppositing line). Through \(v.N >= 0\) on each line, the center of a pixel is in the 
+			triangle for sure.
+		</p>
 		
 		<h2>Task 2: Antialiasing by Supersampling</h2>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
