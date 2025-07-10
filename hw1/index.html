@@ -31,17 +31,6 @@
 			border-radius: 4px;
 			font-size: 0.95em;
 			}
-
-			/* Code blocks */
-			pre {
-			background-color: #f5f5f5;
-			padding: 10px;
-			border-radius: 6px;
-			overflow-x: auto;
-			font-family: Menlo, Consolas, monospace;
-			font-size: 0.9em;
-			line-height: 1.4;
-			}
 		</style>
 	</head>
 	<body>
@@ -77,13 +66,13 @@
 		<code>fill_pixel()</code> will be called.
 		</p>
 
-		<pre>
+		<code>
 		//pseudocode
 		for (x {0}; x < width; ++x)
 		  for (y {0}; y < height; ++y) {
 		    if (inside_triangle(tri, x+0.5, y+0.5)) {
 		      fill_pixel();}}
-		</pre>
+    </code>
 		
 		<p>
 			The customized <code>inside_triangle()</code> has a helper function 
